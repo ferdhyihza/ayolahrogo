@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayolahrogo - Kelas Privat Olahraga Blitar</title>
+    <meta name="description" content="Ayolahrogo adalah kelas privat olahraga di Blitar yang menawarkan program eksklusif untuk Renang, Basket, dan Badminton. Dapatkan pelatihan profesional dengan jadwal fleksibel untuk meningkatkan kebugaran dan keterampilan olahragamu. Bergabunglah sekarang dan rasakan perubahan nyata dalam performa fisik dan kepercayaan dirimu!">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="https://ayolahrogo.ferdhyihza.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ayolahrogo - Kelas Privat Olahraga Blitar">
+    <meta property="og:description" content="Ayolahrogo adalah kelas privat olahraga di Blitar yang menawarkan program eksklusif untuk Renang, Basket, dan Badminton. Dapatkan pelatihan profesional dengan jadwal fleksibel untuk meningkatkan kebugaran dan keterampilan olahragamu. Bergabunglah sekarang dan rasakan perubahan nyata dalam performa fisik dan kepercayaan dirimu!">
+    <meta property="og:image" content="img/opengraph.png">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="ayolahrogo.ferdhyihza.com">
+    <meta property="twitter:url" content="https://ayolahrogo.ferdhyihza.com">
+    <meta name="twitter:title" content="Ayolahrogo - Kelas Privat Olahraga Blitar">
+    <meta name="twitter:description" content="Ayolahrogo adalah kelas privat olahraga di Blitar yang menawarkan program eksklusif untuk Renang, Basket, dan Badminton. Dapatkan pelatihan profesional dengan jadwal fleksibel untuk meningkatkan kebugaran dan keterampilan olahragamu. Bergabunglah sekarang dan rasakan perubahan nyata dalam performa fisik dan kepercayaan dirimu!">
+    <meta name="twitter:image" content="img/opengraph.png">
+    <!-- others -->
+    <link rel="icon" href="img/brand-sq-transparent.png">
     <link href="./dist/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -12,13 +28,13 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-light selection:text-slate-900">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex-shrink-0 flex items-center gap-2">
-                    <div class="w-10 h-10 bg-brand text-white rounded-xl flex items-center justify-center font-bold text-xl">AY</div>
-                    <span class="font-bold text-2xl text-brand-dark tracking-tight">Ayolahraga</span>
+                <div>
+                    <img src="img/logo-text.png" alt="Logo Ayolahrogo" class="h-8">
                 </div>
+
                 <div class="hidden lg:flex space-x-8">
                     <a href="#hero" class="text-slate-600 hover:text-brand font-semibold transition-colors">Beranda</a>
                     <a href="#about" class="text-slate-600 hover:text-brand font-semibold transition-colors">Tentang Kami</a>
@@ -26,8 +42,31 @@
                     <a href="#pricelist" class="text-slate-600 hover:text-brand font-semibold transition-colors">Harga</a>
                     <a href="#testimonies" class="text-slate-600 hover:text-brand font-semibold transition-colors">Testimoni</a>
                 </div>
+
                 <div class="hidden md:flex">
                     <a href="#pricelist" class="bg-brand hover:bg-brand-dark text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-brand/30 hover:-translate-y-0.5">Daftar Sekarang</a>
+                </div>
+
+                <div class="flex md:hidden items-center">
+                    <button id="mobile-menu-button" class="text-slate-600 hover:text-brand focus:outline-none p-2 rounded-md transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-xl absolute w-full left-0 origin-top">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#hero" class="mobile-link block px-4 py-3 text-base font-medium text-slate-700 hover:text-brand hover:bg-brand-light/10 rounded-xl transition-colors">Beranda</a>
+                <a href="#about" class="mobile-link block px-4 py-3 text-base font-medium text-slate-700 hover:text-brand hover:bg-brand-light/10 rounded-xl transition-colors">Tentang Kami</a>
+                <a href="#program" class="mobile-link block px-4 py-3 text-base font-medium text-slate-700 hover:text-brand hover:bg-brand-light/10 rounded-xl transition-colors">Program</a>
+                <a href="#pricelist" class="mobile-link block px-4 py-3 text-base font-medium text-slate-700 hover:text-brand hover:bg-brand-light/10 rounded-xl transition-colors">Harga</a>
+                <a href="#testimonies" class="mobile-link block px-4 py-3 text-base font-medium text-slate-700 hover:text-brand hover:bg-brand-light/10 rounded-xl transition-colors">Testimoni</a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <a href="#pricelist" class="mobile-link block w-full text-center bg-brand hover:bg-brand-dark text-white px-6 py-3 rounded-xl font-bold transition-all shadow-md">Daftar Sekarang</a>
                 </div>
             </div>
         </div>
@@ -59,7 +98,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2 relative">
                     <div class="absolute -inset-4 bg-brand-light/20 rounded-3xl transform rotate-3"></div>
-                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ayolahraga" class="relative rounded-3xl shadow-xl z-10 w-full object-cover h-[400px]">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ayolahrogo" class="relative rounded-3xl shadow-xl z-10 w-full object-cover h-[400px]">
                     <div class="absolute -bottom-6 -right-6 bg-accent text-slate-900 font-bold p-6 rounded-2xl shadow-lg z-20 transform -rotate-3">
                         <span class="block text-4xl mb-1">100+</span>
                         <span class="text-sm">Siswa Aktif</span>
@@ -68,7 +107,7 @@
                 <div class="lg:w-1/2">
                     <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6">Bukan Sekadar Keringat, Ini Gaya Hidup Aktif!</h2>
                     <p class="text-slate-600 mb-6 text-lg leading-relaxed">
-                        Menyambut <strong>Hari Olahraga Nasional 2026</strong>, Ayolahraga hadir dengan misi mencetak generasi muda yang bugar, tangkas, dan percaya diri. Kami percaya setiap orang punya potensi atletik yang terpendam.
+                        Menyambut <strong>Hari Olahraga Nasional 2026</strong>, Ayolahrogo hadir dengan misi mencetak generasi muda yang bugar, tangkas, dan percaya diri. Kami percaya setiap orang punya potensi atletik yang terpendam.
                     </p>
                     <p class="text-slate-600 mb-8 text-lg leading-relaxed">
                         Dengan kurikulum berbasis <strong>sports science</strong> modern dan pelatih yang <strong>friendly</strong> layaknya teman sendiri, olahraga nggak lagi terasa seperti beban, tapi jadi candu yang positif!
@@ -148,6 +187,77 @@
                             <li class="flex items-center text-slate-700"><svg class="w-5 h-5 text-brand mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Shuttlecock & raket sedia</li>
                         </ul>
                         <a href="#pricelist" class="block w-full text-center bg-slate-100 hover:bg-brand hover:text-white text-slate-800 font-bold py-3 rounded-xl transition-colors">Lihat Harga</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="konsultasi" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand font-bold tracking-wider uppercase mb-2 block">Holistic Wellness</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Layanan Konsultasi Online</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto text-lg">Maksimalkan performa dan jaga kesehatan mentalmu dengan ahlinya. Kapan saja, dari mana saja.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="group flex flex-col h-full bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-brand/10 transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-light/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+                    <div class="w-14 h-14 bg-brand-light/20 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        🦴
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Tele-Fisioterapi</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Punya keluhan nyeri otot setelah olahraga atau butuh program pemulihan cedera? Konsultasikan langsung dengan fisioterapis profesional kami.</p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center text-sm text-slate-700 bg-slate-50 p-3 rounded-lg">
+                            <span class="mr-3 text-brand">⏱️</span> 30 - 60 Menit per sesi
+                        </div>
+                        <div class="flex items-center text-sm text-slate-700 bg-slate-50 p-3 rounded-lg">
+                            <span class="mr-3 text-brand">📲</span> Online via Google Meet / WhatsApp
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between mt-auto border-t border-slate-100 pt-6">
+                        <div>
+                            <span class="text-sm text-slate-500 block mb-1">Mulai dari</span>
+                            <span class="text-2xl font-extrabold text-brand-dark">Rp 25k - 40k</span>
+                        </div>
+                        <a href="#" class="bg-brand-light/20 hover:bg-brand hover:text-white text-brand-dark font-bold px-6 py-2.5 rounded-xl transition-colors">Booking</a>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col h-full bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-brand/10 transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-light/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+                    <div class="w-14 h-14 bg-brand-light/20 text-brand rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        🧠
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Konseling Psikologi</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Atasi <strong>mental block</strong>, kecemasan bertanding, atau sekadar butuh ruang aman untuk bercerita. Psikolog kami siap mendengarkan dan membantu.</p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center text-sm text-slate-700 bg-slate-50 p-3 rounded-lg">
+                            <span class="mr-3 text-brand">⏱️</span> 30 - 60 Menit per sesi
+                        </div>
+                        <div class="flex items-center text-sm text-slate-700 bg-slate-50 p-3 rounded-lg">
+                            <span class="mr-3 text-brand">🔒</span> 100% Rahasia & Aman
+                        </div>
+                        <div class="flex items-center text-sm text-slate-700 bg-slate-50 p-3 rounded-lg">
+                            <span class="mr-3 text-brand">📲</span> Online via Google Meet / WhatsApp
+                        </div>
+                        <div class="flex items-center text-sm text-slate-700 bg-slate-50 p-3 rounded-lg items-start">
+                            <span class="mr-3 text-brand mt-0.5">📍</span> 
+                            <span>Offline di Jl. Nangka RT 005/RW 001 Desa Wonorejo Kec. Srengat, Kab. Blitar</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between mt-auto border-t border-slate-100 pt-6">
+                        <div>
+                            <span class="text-sm text-slate-500 block mb-1">Mulai dari</span>
+                            <span class="text-2xl font-extrabold text-brand-dark">Rp 100K - 150k</span> 
+                        </div>
+                        <a href="#" class="bg-brand-light/20 hover:bg-brand hover:text-white text-brand-dark font-bold px-6 py-2.5 rounded-xl transition-colors">Booking</a>
                     </div>
                 </div>
             </div>
@@ -235,7 +345,7 @@
 
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 relative">
                     <div class="text-brand text-4xl mb-4 font-serif">"</div>
-                    <p class="text-slate-600 italic mb-6">"Aku tipe yang takut air dari kecil. Tapi <strong>coach</strong> renang di Ayolahraga bener-bener sabar dan telaten ngajarin step-by-step. Sekarang udah berani bolak-balik gaya bebas."</p>
+                    <p class="text-slate-600 italic mb-6">"Aku tipe yang takut air dari kecil. Tapi <strong>coach</strong> renang di Ayolahrogo bener-bener sabar dan telaten ngajarin step-by-step. Sekarang udah berani bolak-balik gaya bebas."</p>
                     <div class="flex items-center">
                         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
                         <div>
@@ -276,7 +386,7 @@
                 <div>
                     <div class="flex items-center gap-2 mb-4">
                         <div class="w-8 h-8 bg-brand text-white rounded-lg flex items-center justify-center font-bold">AY</div>
-                        <span class="font-bold text-xl tracking-tight">Ayolahraga</span>
+                        <span class="font-bold text-xl tracking-tight">Ayolahrogo</span>
                     </div>
                     <p class="text-slate-400 text-sm">Menjadikan olahraga sebagai gaya hidup seru dan menyenangkan bagi generasi muda Indonesia.</p>
                 </div>
@@ -291,18 +401,36 @@
                 <div>
                     <h4 class="font-bold text-lg mb-4">Kontak Kami</h4>
                     <ul class="space-y-2 text-slate-400 text-sm">
-                        <li>WhatsApp: +62 812-3456-7890</li>
-                        <li>Email: hello@Ayolahraga.id</li>
-                        <li>Instagram: @Ayolahraga.id</li>
+                        <li>WhatsApp: 0822-3320-1930</li>
+                        <li>Email: buzulfa9@gmail.com</li>
+                        <li>Instagram: -</li>
                     </ul>
                 </div>
             </div>
 
             <div class="text-center text-slate-500 pt-8 border-t border-slate-800 text-sm">
-                <p>&copy; 2026 Ayolahraga Sports. Dibuat dengan semangat olahraga.</p>
+                <p>&copy; 2026 Ayolahrogo Sports. Dibuat dengan semangat olahraga.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Toggle menu saat tombol hamburger diklik
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Otomatis tutup menu kalau salah satu link diklik (biar UX-nya mulus)
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
 
 </body>
 </html>
